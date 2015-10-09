@@ -50,3 +50,9 @@ li img {
     height: 255px;
     width: 255px;
 }
+p#hint {
+    position:fixed;
+    bottom:0;
+    right: 0;
+    background-color: #FFFFC8;
+}
