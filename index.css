@@ -1,30 +1,54 @@
+html {
+	font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+span#header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 0;
+	width: 100%;
+	height: 2%;
+	background-color: #CCCCCC;
+}
+span#tail {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	width: 100%;
+	height: 2%;
+	background-color: #CCCCCC;
+}
 h1 {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 80px;
+    height: 4%;
     vertical-align: middle;
     text-align: center;
     left: 0;
-    font-size: 3.5em;
+    font-size: 4em;
     margin: 0px 0px 0px 0px;
-    padding-top: 30px;
-    font-family: sans-serif;
+    padding-top: 45px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
 div {
     position: fixed;
-    top: 14%;
+    top: 24%;
     left: 50%;
     width: 300px;
-    height: 300px;
+    height: 200px;
     text-align: center;
     margin-left: -150px;
-    margin-left: -150px;
+    margin-top: -100px;
     overflow: hidden;
     z-index: 99;
 
+}
+div h2 {
+	margin-top: 25px;
 }
 div img {
     max-width: 300px;
@@ -35,13 +59,14 @@ div p {
 }
 ul {
     position: fixed;
-    top: 40%;
+    top: 37%;
     left: 0;
     width: 100%;
     list-style-type: none;
-    height: 500px;
+    height: 50%;
     overflow: hidden;
-    margin: 0;
+    margin: 0, 0, 0, 0;
+    padding: 0, 0, 0, 0;
 }
 ul li {
     float: left;
@@ -52,7 +77,34 @@ li img {
 }
 p#hint {
     position:fixed;
-    bottom:0;
+    bottom:10px;
     right: 0;
     background-color: #FFFFC8;
+}
+@media screen and (min-width: 1401px) {
+	li img {height: 260px; width: 260px;}
+	div {width: 300px; height: 200px; margin-left: -150px; margin-top: -100px;}
+	div img {max-width: 300px;}
+	div h2 {margin-top: 25px;}
+	h1 {font-size: 4em; padding-top: 45px;}
+	div p {margin-left: auto 55px;}
+
+}
+@media screen and (max-width: 1400px) {
+	li img {height: 195px; width: 210px;}
+	div {width: 250px; height: 150px; margin-left: -125px; margin-top: -75px;}
+	div img {max-width: 200px;}
+	div h2 {font-size: 120%; margin-top: 18px;}
+	h1 {font-size: 3.5em; padding-top: 30px;}
+	div p {font-size: 85%; margin-left: auto 20px;}
+	ul {top: 36%; height: 56%; margin: auto auto;}
+}
+@media screen and (max-width: 1300px) {
+	li img {height: 195px; width: 200px;}
+	div {width: 250px; height: 150px; margin-left: -125px; margin-top: -75px;}
+	div img {max-width: 200px;}
+	div h2 {font-size: 120%; margin-top: 18px;}
+	h1 {font-size: 3.5em; padding-top: 30px;}
+	div p {font-size: 85%; margin-left: auto 20px;}
+	ul {top: 36%; height: 54%; margin: auto auto;}
 }
